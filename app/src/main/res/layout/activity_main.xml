@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to continue"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Sign In Button -->
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SIGN IN"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"/>
+
+        <!-- Sign Up Navigation -->
+        <TextView
+            android:id="@+id/tvGoToSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Don't have an account? Sign Up"
+            android:textSize="15sp"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</ScrollView>

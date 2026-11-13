@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp">
+
+    <!-- Profile photo, clipped to a circle -->
+    <ImageView
+        android:id="@+id/ivHomeProfile"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_circle"
+        android:clipToOutline="true"
+        android:contentDescription="Profile photo"
+        android:outlineProvider="background"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/primary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/primary"
+        android:text="SIGN OUT"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
